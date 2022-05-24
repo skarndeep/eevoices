@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+
 <html>
 <meta name="title" content="HKDSE French Grade Calculator | karndeep.me">
 <meta name="description" content="The site to calculate your French GCE AS Level Score and gives a predicted grade!">
@@ -8,6 +9,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
 <meta name="author" content="SINGH Karndeep">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.form.io/formiojs/formio.full.min.css">
+<script src="https://cdn.form.io/formiojs/formio.full.min.js"></script>
 <link rel="icon" type="image/png" href="https://seeklogo.com/images/F/france-flag-logo-DBC61B59A7-seeklogo.com.png"/>
 <style>
 table, th, td {
@@ -15,7 +19,11 @@ table, th, td {
 }
 </style>
 
-<div id="formio"><script src="https://cdn.form.io/formiojs/formio.embed.js?src=https://sjlmntsrjaihfkm.form.io/eevoicesbeta&libs=true"></script></div>
+<div id="formio"><script type="text/javascript">
+  window.onload = function() {
+    Formio.createForm(document.getElementById('formio'), 'https://sjlmntsrjaihfkm.form.io/eevoicesbeta');
+  };
+</script></div>
 
     </body>
 </html>
